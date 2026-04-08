@@ -17,7 +17,7 @@ const Lowlanejorrneebg = ({children}) => {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: '#111B66',
+    backgroundColor: 'rgb(45, 16, 94)',
   },
   content: {
     flexGrow: 1,

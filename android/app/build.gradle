@@ -79,7 +79,7 @@ android {
 
     namespace "com.pinflowlanejourney"
     defaultConfig {
-        applicationId "com.pinflowlanejourney"
+        applicationId "com.pinflowlaneexplorer"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

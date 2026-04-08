@@ -62,7 +62,7 @@ const Lowlanejorrneeonb = () => {
   };
 
   return (
-    <LinearGradient colors={['#721B95', '#0F1195']} style={{flex: 1}}>
+    <LinearGradient colors={['#721B95', 'rgb(33, 10, 73)']} style={{flex: 1}}>
       <ScrollView
         contentContainerStyle={{flexGrow: 1}}
         showsVerticalScrollIndicator={false}>

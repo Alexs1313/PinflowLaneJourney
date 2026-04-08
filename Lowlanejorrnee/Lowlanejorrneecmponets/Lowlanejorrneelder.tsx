@@ -26,47 +26,60 @@ export const lowlanejorrneelder = `<!DOCTYPE html>
   }
 
   .loader {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     position: relative;
-    transform: translateX(-50%);
   }
 
-  .loader::before, 
-  .loader::after {
+  .loader:before {
     content: '';
+    width: 48px;
+    height: 5px;
+    background: rgba(240,128,128,0.3);
     position: absolute;
-    width: inherit;
-    height: inherit;
+    top: 60px;
+    left: 0;
     border-radius: 50%;
-    mix-blend-mode: multiply;
-    animation: rotate92523 2s infinite cubic-bezier(0.77, 0, 0.175, 1);
+    animation: shadow324 0.5s linear infinite;
   }
 
-  .loader::before {
-    background-color: #75e2ff;
+  .loader:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #f08080;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    animation: jump7456 0.5s linear infinite;
   }
 
-  .loader::after {
-    background-color: #ff8496;
-    animation-delay: 1s;
-  }
-
-  @keyframes rotate92523 {
-    0%, 100% {
-      left: 35px;
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 3px;
     }
-
     25% {
-      transform: scale(.3);
+      transform: translateY(9px) rotate(22.5deg);
     }
-
     50% {
-      left: 0%;
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
     }
-
     75% {
-      transform: scale(1);
+      transform: translateY(9px) rotate(67.5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+
+  @keyframes shadow324 {
+    0%, 100% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1);
     }
   }
 </style>
@@ -95,7 +108,7 @@ const Lowlanejorrneelder = () => {
   }, [navigation]);
 
   return (
-    <View style={{flex: 1, backgroundColor: '#0F1195'}}>
+    <View style={{flex: 1, backgroundColor: 'rgb(45, 16, 94)'}}>
       <ScrollView
         contentContainerStyle={{flexGrow: 1}}
         showsVerticalScrollIndicator={false}>
