@@ -8,9 +8,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.fniepqedm.mmjd
+        bundle_identifier: com.ghdks.landkl
       vars:
-        BUNDLE_ID: com.fniepqedm.mmjd
+        BUNDLE_ID: com.ghdks.landkl
         XCODE_WORKSPACE: PinflowLaneJourney.xcworkspace
         XCODE_SCHEME: PinflowLaneJourney
         APP_STORE_APPLE_ID: 6761895193
