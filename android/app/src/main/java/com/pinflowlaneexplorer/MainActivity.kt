@@ -1,4 +1,4 @@
-package com.pinflowlanejourney
+package com.pinflowlaneexplorer
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

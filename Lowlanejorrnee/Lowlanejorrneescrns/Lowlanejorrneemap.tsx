@@ -28,8 +28,8 @@ import {
 const lowlanejorrneeMapInitRgn = {
   latitude: 51.2,
   longitude: 10.45,
-  latitudeDelta: 7.5,
-  longitudeDelta: 7.5,
+  latitudeDelta: 0.01,
+  longitudeDelta: 0.01,
 };
 
 const Lowlanejorrneemap = () => {
@@ -90,8 +90,8 @@ const Lowlanejorrneemap = () => {
         {
           latitude: it.lat,
           longitude: it.lng,
-          latitudeDelta: 0.25,
-          longitudeDelta: 0.25,
+          latitudeDelta: 0.01,
+          longitudeDelta: 0.01,
         },
         650,
       );

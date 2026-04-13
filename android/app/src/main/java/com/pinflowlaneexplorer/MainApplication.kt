@@ -1,4 +1,4 @@
-package com.pinflowlanejourney
+package com.pinflowlaneexplorer
 
 import android.app.Application
 import com.facebook.react.PackageList
